@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mipmaplevelandlanguagefix",
+  "version": "${version}",
+
+  "name": "Mipmaplevel and Language Fix",
+  "description": "Makes changing Mipmaplevels and Language faster/instant.",
+  "authors": [
+    "KingContaria"
+  ],
+  "contact": {
+    "homepage": "https://github.com/KingContaria"
+  },
+
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "mixins": [
+    "mipmaplevelandlanguagefix.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4"
+  }
+}
