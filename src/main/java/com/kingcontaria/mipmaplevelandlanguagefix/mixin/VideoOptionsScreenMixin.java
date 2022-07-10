@@ -9,7 +9,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 import java.util.concurrent.CompletableFuture;
 
 @Mixin(VideoOptionsScreen.class)
-
 public class VideoOptionsScreenMixin {
     @Redirect(method = "removed", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/MinecraftClient;reloadResourcesConcurrently()Ljava/util/concurrent/CompletableFuture;"))
     private CompletableFuture<Void> reloadMipMapLevels(MinecraftClient client) {
